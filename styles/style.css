@@ -1,0 +1,550 @@
+* {
+    box-sizing: border-box;
+  }
+
+:root {
+    --Yellow: #ffe50f;
+    --white: #fff;
+    --black: #000;
+    --background: #cfd7de;
+    --accentRed: #ff0000;
+    --accentBlue: #0000ff;
+    --JFEtype: "TrainerGrotesk Regular";
+    --EHtype2: "century_schoolbook_monospacRg";
+}
+
+@font-face{
+    font-family:"TrainerGrotesk Regular";
+    src:url("../fonts/TrainerGrotesk-Regular.woff2") format("woff2"),
+    url("../fonts/TrainerGrotesk-Regular.woff") format("woff");
+}
+
+@font-face{
+    font-family: "century_schoolbook_monospacRg";
+    src: url('../EH_Website_Fonts/centuryschoolbookbt-monospace-webfont.woff2') format('woff2'),
+           url('../EH_Website_Fonts/centuryschoolbookbt-monospace-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+}
+
+/* General */
+
+body {
+    font-size: 100%;
+    width: 100vw;
+}
+
+main {
+height: auto;
+width: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1 {
+font-family: "TrainerGrotesk Regular";
+line-height: 0.8;
+margin: 0; 
+font-size: 6vw;
+text-transform: uppercase;
+font-weight: 400;
+color: rgb(42, 95, 107);
+}
+
+h1:last-of-type {
+  color: black;
+}
+
+h2 {
+font-family: "TrainerGrotesk Regular";
+line-height: 0.8;
+margin: 0; 
+font-size: 60px;
+text-transform: uppercase;
+font-weight: 100;
+color: rgb(255, 72, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h3 {
+  font-family: "TrainerGrotesk Regular";
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  margin: 0 auto 0 0;
+}
+
+h4 {
+ 
+}
+
+h5 {
+  font-family: var(--EHtype);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accentRed);
+  text-align: left;
+  margin: 0 auto 0 0;
+
+}
+
+h6 {
+ 
+}
+
+p {
+  font-family: "TrainerGrotesk Regular";
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+section {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  background-color: rgb(239, 239, 239);
+}
+
+section:first-of-type {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+section:nth-of-type(3) {
+  background-color: rgb(255, 255, 255);
+}
+
+section:last-of-type {
+  background-color: rgb(255, 255, 255);
+}
+
+.lockup {
+  display: flex;
+  flex-direction: row;
+}
+
+.lockup-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.title {
+  width: 50vw;
+  padding: 30px;
+}
+
+.title h2 { 
+  text-align: left;
+  color: black;
+}
+
+
+picture {
+  width: 50vw;
+  position: relative;
+}
+
+.button-new {
+  font-family: "TrainerGrotesk Regular";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+}
+
+.caption{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  width: 100vw;
+  padding: 30px;
+}
+
+.caption p {
+  width: calc(50vw - 30px);
+  margin: 0;
+  padding-right: 30px;
+}
+
+.credits {
+  padding-left: 30px;
+}
+
+/* Header */
+
+header {
+  font-family: var(--EHtype);
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* -------------------------------- */
+
+/* Navigation */
+ 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0px;
+  width: 100vw;
+  position: relative;
+}
+
+header .nav-logo {
+  display: block;
+  width: 250px;
+  padding-left: 40px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+}
+
+
+nav .nav-menu {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  max-height: 0;
+  background-color: lightgrey;
+}
+
+header .nav-contact {
+  text-align: right;
+  margin-right: 0px;
+  padding: 16px;
+  width: 0px;
+  display: block;
+}
+
+header .nav-journal {
+  padding: 16px;
+}
+
+header .nav-dropdown-button {
+  color: var(--black);
+  padding: 16px;
+  border: none;
+  background: var(--Yellow);
+  text-align: center;
+}
+
+header .nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+  
+header .nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--black);
+  min-width: 200px;
+  z-index: 1;
+  left: 50%;
+  margin-left: -100px;
+
+}
+  
+header .nav-dropdown-content a {
+  color: var(--white);
+  padding: 1.5rem 0rem;
+  text-decoration: none;
+  display: block;
+}
+  
+header .nav-dropdown-content a:hover {
+  color: var(--Yellow);
+}
+  
+header .nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+/* -------------------------------- */
+
+/* Navigation Setup for Mobile */
+
+header .menu-icon {
+  cursor: pointer;
+  display: none;
+  padding: 28px 40px;
+  position: relative;
+  user-select: none;
+  z-index: 10;
+}
+
+header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 5.5px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 46px;
+  margin: 0 0 0 auto;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+header .menu-icon .navicon:before {
+  top: 16px;
+}
+
+header .menu-icon .navicon:after {
+  top: -16px;
+}
+
+/* menu btn */
+header .menu-btn {
+  display: none;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+header .nav-journal {
+  display: block;
+}
+
+nav .nav-contact {
+  display: block;
+  padding: 16px;
+  text-align: center;
+}
+
+header label {
+  width: calc(100vw - 147px);
+  text-align: right;
+}
+
+header .nav-logo {
+  display: block;
+  margin: 0 auto 0 0;
+  padding-left: 20px;
+  width: 180px;
+} 
+
+header .nav-dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header .nav-dropdown-button {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+nav .top-nav {
+  display: inline-block;
+  justify-content: space-between;
+  width: auto;
+  position: relative;
+  z-index: 100;
+  padding-left: 30px;
+  padding-top: 20px;
+
+}
+
+header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding-right: 30px;
+padding-top: 45px;
+}
+
+
+
+header .nav-dropdown:active .nav-dropdown-content {
+  display: block;
+}
+
+nav .nav-dropdown-content {
+  display: none;
+  position: relative;
+  left: 0;
+  margin-left: 0;
+}
+
+nav .nav-journal {
+  display: block;
+  padding: 16px;
+}
+
+#menu-btn:checked ~ .nav-menu {
+  position: relative;
+  min-height: 117vh;
+  width: 100%;
+  margin: -17vh auto 0 auto;
+  z-index: 1;
+}
+
+.nav-menu a {
+  font-family: "TrainerGrotesk Regular";
+  line-height: 0.8;
+  margin: 0; 
+  font-size: 6vw;
+}
+
+  
+  .close {
+  color: rgb(239, 239, 239);
+  font-size: 36px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-family: "TrainerGrotesk Regular";
+  z-index: 400;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: rgb(255, 72, 0);
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .film-preview {
+    background-color: rgb(0, 0, 0) !important;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .vimeo {
+    height: 100vh;
+    padding: 10%;
+  }
+   
+  iframe {
+   
+  }
+
+/* -------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+
+
+}
+
+/* -------------------------------- */
+
+@media screen and (max-width: 600px) {
+
+h1 {
+font-size: 30px;
+
+
+}
+
+.title {
+  width: 100vw;
+}
+
+.title h2 {
+    text-align: left;
+}
+
+.lockup {
+  display: flex;
+  flex-direction: column;
+}
+  
+.lockup-reverse {
+  display: flex;
+  flex-direction: column;
+}
+
+picture {
+  width: 100vw;
+}
+
+.caption {
+  flex-direction: column;
+  align-items: start;
+}
+
+.caption p {
+  width: calc(100vw - 30px);
+  padding-bottom: 30px;
+}
+
+.credits {
+  padding-left: 0px;
+}
+
+section {
+  height: auto;
+}
+
+  
+
+}
