@@ -198,9 +198,6 @@ picture {
 /* Header */
 
 header {
-  font-family: var(--EHtype);
-  font-size: 24px;
-  text-align: center;
   position: absolute;
   width: 100%;
   z-index: 3;
@@ -490,6 +487,11 @@ nav .nav-journal {
    
   }
 
+  .about {
+    padding: 100px 30px;
+    max-width: 1080px;
+  }
+
 /* -------------------------------- */
 
 @media screen and (max-width: 1000px) {
@@ -511,13 +513,21 @@ h2 {
   font-size: 11vw;
 }
 
+.nav-menu a {
+font-size: 11vw;
+}
+
 .title {
-  width: 100vw;
+  width: 70vw;
 }
 
 .title h2 {
     text-align: left;
     font-size: 11vw;
+}
+
+.top-nav h2 {
+  font-size: 11vw;
 }
 
 .lockup {
@@ -546,10 +556,17 @@ picture {
 
 .credits {
   padding-left: 0px;
+
 }
 
 section {
-  height: auto;
+  height: 90vh;
+  justify-content:start;
+}
+
+header label {
+  width: calc(100vw - 50vw)
+
 }
 
   
