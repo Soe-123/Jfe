@@ -500,7 +500,8 @@ nav .nav-journal {
 @media screen and (max-width: 600px) {
 
 h1 {
-font-size: 30px;
+font-size: 12vw;
+padding: 0 30px;
 
 
 }
@@ -511,16 +512,17 @@ font-size: 30px;
 
 .title h2 {
     text-align: left;
+    font-size: 12vw;
 }
 
 .lockup {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
   
 .lockup-reverse {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 picture {
