@@ -47,7 +47,7 @@ img {
 
 h1 {
 font-family: "TrainerGrotesk Regular";
-line-height: 0.8;
+line-height: 0.85;
 margin: 0; 
 font-size: 6vw;
 text-transform: uppercase;
@@ -57,7 +57,7 @@ color: rgb(42, 95, 107);
 
 h2 {
 font-family: "TrainerGrotesk Regular";
-line-height: 0.8;
+line-height: 0.85;
 margin: 0 auto 0 0; 
 font-size: 6vw;
 text-transform: uppercase;
@@ -449,7 +449,7 @@ nav .nav-journal {
 
 .nav-menu a {
   font-family: "TrainerGrotesk Regular";
-  line-height: 0.8;
+  line-height: 0.85;
   margin: 0; 
   font-size: 6vw;
 }
@@ -506,7 +506,7 @@ nav .nav-journal {
 
 h1 {
 font-size: 11vw;
-padding: 0 30px;
+padding: 0px;
 }
 
 h2 {
@@ -514,7 +514,7 @@ h2 {
 }
 
 .nav-menu a {
-font-size: 11vw;
+font-size: 16.5vw;
 }
 
 .title {
@@ -567,6 +567,10 @@ section {
 header label {
   width: calc(100vw - 50vw)
 
+}
+
+section {
+  background-color: rgb(255, 255, 255);
 }
 
   
