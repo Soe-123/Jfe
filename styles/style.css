@@ -128,6 +128,7 @@ section:first-of-type {
   align-items: center;
   background-color: rgb(255, 255, 255);
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 section:nth-of-type(3) {
@@ -507,10 +508,26 @@ nav .nav-journal {
 h1 {
 font-size: 11vw;
 padding: 0px;
+text-align: left;
+margin: 0 auto 0 0;
+width: 70%
 }
 
 h2 {
   font-size: 11vw;
+  text-align: right;
+}
+
+h2:first-of-type {
+  margin: 0 0 0 auto;
+}
+
+.title.two{
+  margin: 0 0 0 auto;
+}
+
+.title.two h2 {
+  text-align: right;
 }
 
 .nav-menu a {
@@ -573,6 +590,8 @@ section {
   background-color: rgb(255, 255, 255);
 }
 
-  
+.vimeo {
+  padding: 10% 0;
+}   
 
 }
