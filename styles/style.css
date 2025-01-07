@@ -76,15 +76,17 @@ section:first-of-type button {
  border: none; 
  background: none;
  position: absolute;
- bottom: 10px;
+ bottom: 15px;
+ right: 22px;
 }
 
-section:first-of-type button p {
+section:first-of-type button a {
   font-size: 60px;
   font-weight: 400;
   line-height: 0.85;
   font-family: "TrainerGrotesk Regular";
   margin: 0;
+  color: black;
 }
 
 a {
@@ -518,6 +520,18 @@ nav .nav-journal {
     max-width: 1080px;
   }
 
+  footer {
+    width: 100vw;
+    background-color: rgb(42, 203, 104);
+    color: black;
+    height: 100px;
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: end;
+
+  }
+
 /* -------------------------------- */
 
 @media screen and (max-width: 1000px) {
@@ -560,7 +574,7 @@ font-size: 16.5vw;
 }
 
 .title {
-  width: 70vw;
+  width: 80vw;
 }
 
 .title h2 {
@@ -571,6 +585,10 @@ font-size: 16.5vw;
 .top-nav h2 {
   font-size: 11vw;
 }
+
+h3 {
+  font-size: 16px !important;
+  }
 
 .lockup {
   display: flex;
@@ -598,26 +616,26 @@ picture {
 
 .credits {
   padding-left: 0px;
+}
 
+.button-new {
+  font-size: 20px;
 }
 
 section {
-  height: 90vh;
+  height: auto;
   justify-content:start;
+  background-color: rgb(255, 255, 255);
+  min-height: 105vh;
 }
 
 header label {
   width: calc(100vw - 50vw)
-
 }
 
-section {
-  background-color: rgb(255, 255, 255);
-  height: 105vh;
-}
 
 section:first-of-type {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .vimeo {
