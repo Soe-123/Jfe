@@ -193,6 +193,11 @@ section:last-of-type {
   justify-content: center;
   align-items: center;
   color: white;
+  padding: 30px;
+}
+
+section:last-of-type p {
+  text-align: center;
 }
 
 .section-white {
@@ -233,7 +238,7 @@ picture {
   transform: translate(-50%, -50%);
   background-color: transparent;
   color: #fff;
-  font-size: 30px;
+  font-size: 18px;
   border: none;
   padding: 10px;
 }
@@ -264,7 +269,7 @@ header {
   z-index: 3;
   padding: 0;
   margin: 0;
-  background-color: rgb(34, 76, 153);
+  background-color: white;
   color: white;
 }
 
@@ -374,7 +379,7 @@ header .menu-icon {
 }
 
 header .menu-icon .navicon {
-  background: rgb(255, 255, 255);
+  background: rgb(33, 33, 118);
   display: block;
   height: 5.5px;
   position: relative;
@@ -385,7 +390,7 @@ header .menu-icon .navicon {
 
 header .menu-icon .navicon:before,
 header .menu-icon .navicon:after {
-  background: rgb(255, 255, 255);
+  background: rgb(33, 33, 118);
   content: '';
   display: block;
   height: 100%;
@@ -512,10 +517,12 @@ nav .nav-journal {
 
 .nav-menu a {
   font-family: "TrainerGrotesk Regular";
-  line-height: 0.85;
+  line-height: 0.9;
   margin: 0; 
   font-size: 6vw;
 }
+
+
 
   
 .close {
@@ -591,7 +598,7 @@ nav .nav-journal {
     max-width: 700px;
     background-color: rgb(255, 255, 255);
     padding: 30px 30px 25px 30px;
-    margin: 30px 0 0 auto;
+    margin: 0px 0 0 auto;
   }
 
   .about a {
@@ -614,6 +621,10 @@ nav .nav-journal {
     padding: 30px;
   }
 
+  .links img {
+    height: 50px;;
+  }
+
   footer {
     width: 100vw;
     background-color: rgb(42, 203, 104);
@@ -625,11 +636,15 @@ nav .nav-journal {
 
   }
 
+ 
+
 /* -------------------------------- */
 
 @media screen and (max-width: 1000px) {
 
-
+  .about p{
+    margin: 30px 0 0 auto;
+  }
 
 }
 
@@ -663,7 +678,7 @@ h2:first-of-type {
 }
 
 .nav-menu a {
-font-size: 16.5vw;
+font-size: 11vw;
 }
 
 .title {
@@ -712,13 +727,12 @@ picture {
 }
 
 .button-new {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 section {
   height: auto;
   justify-content:start;
-  background-color: rgb(255, 255, 255);
   min-height: 105vh;
 }
 
