@@ -238,9 +238,10 @@ picture {
   transform: translate(-50%, -50%);
   background-color: transparent;
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
   border: none;
   padding: 10px;
+  width: 220px;
 }
 
 .caption{
@@ -732,6 +733,7 @@ picture {
 
 .button-new {
   font-size: 18px;
+  width: 170px;
 }
 
 section {
