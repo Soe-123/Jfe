@@ -672,11 +672,11 @@ h2:first-of-type {
 }
 
 .title.two{
-  margin: 0 0 0 auto;
+
 }
 
 .title.two h2 {
-  text-align: right;
+  text-align: left;
 }
 
 .nav-menu a {
@@ -685,6 +685,7 @@ font-size: 11vw;
 
 .title {
   width: 80vw;
+  padding: 25px 30px 10px 30px;
 }
 
 .title h2 {
@@ -717,6 +718,7 @@ picture {
 .caption {
   flex-direction: column;
   align-items: start;
+  padding: 20px 30px 20px 30px
 }
 
 .caption p {
@@ -735,7 +737,7 @@ picture {
 section {
   height: auto;
   justify-content:start;
-  min-height: 105vh;
+  min-height: 100vh;
 }
 
 header label {
