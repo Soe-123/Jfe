@@ -48,11 +48,17 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
+  
+}
+
+.about picture {
+  background-color: rgb(235, 179, 143);
 }
 
 .about picture img {
   filter: grayscale();
-  mix-blend-mode: hard-light;
+  mix-blend-mode: multiply;
+ 
 }
 
 h1 {
@@ -80,7 +86,7 @@ text-align: left;
 font-size: 52px;
 color: rgb(45, 166, 210);
 padding-top: 0;
-line-height: 0;
+line-height: 0.9;
 
 }
 
@@ -479,7 +485,7 @@ nav .top-nav {
   position: relative;
   z-index: 100;
   padding-left: 30px;
-  padding-top: 40px;
+  padding-top: 16px;
 
 }
 
@@ -752,7 +758,7 @@ header label {
 
 
 section:first-of-type {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .vimeo {
