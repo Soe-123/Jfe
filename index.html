@@ -79,7 +79,7 @@
             <div class="lockup-reverse">
             <picture>
                 <img src="https://res.cloudinary.com/engage-here-cic/image/upload/v1736117107/JFE_Website_5_egrbza.jpg" alt="">
-                <a class="button-new" href="./packingaway.html">WATCH + LISTEN</a>
+                <a class="button-new" href="./tellyousomething">WATCH + LISTEN</a>
             </picture>
             <div class="title two">
             <h2>I NEED TO TELL YOU SOMETHING</h2>
@@ -100,37 +100,12 @@
                 </div>
         </div>
         </section>
-        <section class="snap">
-            <div class="lockup">
-            <picture>
-                <img src="https://res.cloudinary.com/engage-here-cic/image/upload/v1736116063/JFE_Website_3_kmlylw.jpg" alt="">
-                <a class="button-new" href="./packingaway.html">WATCH + LISTEN</a>
-            </picture>
-            <div class="title">
-            <h2>Two Big Feet</h2>
-            </div>
-            </div>
-        <div class="caption">
-            <p>
-                After a conspiracy theorist is unambiguously dumped, his loyal to a fault childhood best friend schemes to fake a Sasquatch sighting to lift his dwindling spirits.
-            </p>
-            <div class="credits">
-                
-            <h3>
-            Director: Noah Stratton-Twine
-            </h3>
-            <h3>
-            Additional Sound Design and Mix: Joseph Field Eccles
-            </h3>
-            </div>
-        </div>
-        </section>
 
         <section class="snap">
             <div class="lockup-reverse">
             <picture>
                 <img src="https://res.cloudinary.com/engage-here-cic/image/upload/v1736116221/JFE_Website_4_jvqdik.jpg" alt="">
-                <a class="button-new" href="./thenobody.html">WATCH + LISTEN</a>
+                <a class="button-new" href="./thenobody">WATCH + LISTEN</a>
             </picture>
             <div class="title two">
             <h2>THE NOBODY</h2>
@@ -152,11 +127,40 @@
         </div>
         </section>
 
+
+        <section class="snap">
+            <div class="lockup">
+            <picture>
+                <img src="https://res.cloudinary.com/engage-here-cic/image/upload/v1736116063/JFE_Website_3_kmlylw.jpg" alt="">
+                <a class="button-new" href="#">COMING SOON</a>
+            </picture>
+            <div class="title">
+            <h2>Two Big Feet</h2>
+            </div>
+            </div>
+        <div class="caption">
+            <p>
+                After a conspiracy theorist is unambiguously dumped, his loyal to a fault childhood best friend schemes to fake a Sasquatch sighting to lift his dwindling spirits.
+            </p>
+            <div class="credits">
+                
+            <h3>
+            Director: Noah Stratton-Twine
+            </h3>
+            <h3>
+            Additional Sound Design and Mix: Joseph Field Eccles
+            </h3>
+            </div>
+        </div>
+        </section>
+
+        
+
         <section class="snap">
             <div class="lockup">
             <picture>
                 <img src="https://res.cloudinary.com/engage-here-cic/image/upload/v1736149985/JFE_Website_6_guhjww.jpg" alt="">
-                <a class="button-new" href="./packingaway.html">WATCH + LISTEN</a>
+                <a class="button-new" href="#">COMING SOON</a>
             </picture>
             <div class="title">
             <h2>Weekend One</h2>
@@ -182,7 +186,7 @@
             <div class="lockup-reverse">
             <picture>
                 <img src="https://res.cloudinary.com/engage-here-cic/image/upload/v1736150708/JFE_Website_7_mg2ksp.jpg" alt="">
-                <a class="button-new" href="./packingaway.html">WATCH + LISTEN</a>
+                <a class="button-new" href="#">COMING SOON</a>
             </picture>
             <div class="title">
             <h2>Two Days On The Interstate</h2>
@@ -211,6 +215,16 @@
 
 
     </main>
+    <script>
+        const convertStyle = () => {
+          const height = window.innerHeight;
+          Array.from(document.getElementsByTagName("section")).forEach((element) => {
+            element.style.height = `${height}px`;
+          });
+        };
+        window.addEventListener("resize", convertStyle);
+        window.addEventListener("DOMContentLoaded", convertStyle);
+      </script>
     <script src="./jquery.js"></script>
     <script src="./modal.js"></script>
     <script src="./modaltest.js"></script>

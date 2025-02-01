@@ -752,7 +752,7 @@ header label {
 
 
 section:first-of-type {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .vimeo {
