@@ -79,8 +79,8 @@ text-align: left;
 .top-nav h2 {
 font-size: 52px;
 color: rgb(45, 166, 210);
-padding-top: 4px;
-line-height: 1.1;
+padding-top: 0;
+line-height: 0;
 
 }
 
@@ -479,7 +479,7 @@ nav .top-nav {
   position: relative;
   z-index: 100;
   padding-left: 30px;
-  padding-top: 8px;
+  padding-top: 40px;
 
 }
 
