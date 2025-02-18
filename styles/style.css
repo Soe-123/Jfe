@@ -208,6 +208,9 @@ section:last-of-type {
 
 section:last-of-type p {
   text-align: center;
+  font-size: 16px;
+  position: absolute;
+  bottom: 15px;
 }
 
 .section-white {
@@ -500,8 +503,6 @@ header .menu-icon {
   padding-top: 30px;
 }
 
-
-
 header .nav-dropdown:active .nav-dropdown-content {
   display: block;
 }
@@ -518,6 +519,7 @@ nav .nav-journal {
   padding: 16px;
 }
 
+
 #menu-btn:checked ~ .nav-menu {
   position: relative;
   min-height: 113vh;
@@ -533,9 +535,6 @@ nav .nav-journal {
   font-size: 6vw;
   padding-top: 8.5vh;
 }
-
-
-
   
 .close {
   color: rgb(239, 239, 239);
@@ -565,7 +564,6 @@ nav .nav-journal {
   transform: translate(-50%, -50%);
   font-family: "TrainerGrotesk Regular";
   z-index: 400;
-
   }
 
   
@@ -614,13 +612,14 @@ nav .nav-journal {
   }
 
   .about a {
-    max-width: 700px;
     background-color: rgba(255, 255, 255, 0);
     padding: 0;
+    padding-top: 30px;
     font-family: "TrainerGrotesk Regular";
     z-index: 400;
     font-size: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
+
     
   }
 
@@ -647,7 +646,13 @@ nav .nav-journal {
     padding: 20px;
     flex-direction: row;
     justify-content: start;
+  }
 
+  section:last-of-type a {
+    font-family: "TrainerGrotesk Regular";
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
   }
 
  
@@ -768,9 +773,10 @@ section:first-of-type {
 min-height: 88vh;
 }
 
-section:last-of-type {
-  }
-
+section:last-of-type p {
+  text-align: left;
+  left: 30px;
+}
 .vimeo {
   padding: 10% 0;
 }   
