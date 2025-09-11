@@ -662,6 +662,33 @@ nav .nav-journal {
 
   }
 
+  .laurel-two {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 20%;
+
+  }
+
+  .laurel-two.adjust {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 20%;
+
+  }
+
+  .laurel-three {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20%;
+
+  }
+
+  
+
  
 
 /* -------------------------------- */
