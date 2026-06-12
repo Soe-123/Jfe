@@ -607,7 +607,7 @@ nav .nav-journal {
   }
 
   .about p{
-    max-width: 700px;
+    max-width: 750px;
     margin: 0px 0 0 auto;
   }
 
@@ -617,6 +617,7 @@ nav .nav-journal {
     font-family: "TrainerGrotesk Regular";
     z-index: 400;
     color: rgb(45, 166, 210);
+    font-size: 24px;
 
     
   }
@@ -696,6 +697,10 @@ nav .nav-journal {
 
   .about p{
     margin: 24px 0 0 auto;
+    font-size: 20px;
+  }
+
+   .about a{
     font-size: 20px;
   }
 
