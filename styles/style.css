@@ -597,7 +597,7 @@ nav .nav-journal {
     padding: 85px 30px 30px 30px;
     width: 100%;
     min-height: 100vh;
-    max-width: 950px;
+    max-width: 100%;
   }
 
   .about picture {
@@ -616,8 +616,7 @@ nav .nav-journal {
     padding: 0;
     font-family: "TrainerGrotesk Regular";
     z-index: 400;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(45, 166, 210);
 
     
   }
